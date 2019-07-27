@@ -9,59 +9,160 @@
     <link rel="stylesheet" href="src/dist/styles.min/slyle.min.css">
 </head>
 <body>
-    <div class="page">
-        <div class="container">
-            <section class="title">
-                <h1>Прогноз погоды</h1>
-                <small class="row">
-                    <spam>Самара,</spam>
-                    <spam>2 июня,</spam>
-                    <spam>среда</spam>
-                </small>
-            </section>
+    <div class="is_overlay full-page">
+
+            <video id="video" 
+                width="100%" height="auto" 
+                autoplay="autoplay" 
+                loop="loop" 
+                preload="auto">
+                    <!-- <source src="assets/video/clear.mp4" style="display: none;"></source> -->
+                    <!-- <source src="assets/video/clouds.mp4"></source> -->
+                    <source src="assets/video/rain.mp4" style="display: none;"></source>
+                    <!-- <source src="assets/video/snow.mp4"></source> -->
+            </video>
+
+        <div class="page">
+
+            <header>
+                <section class="container center title">
+                    <h1>Прогноз погоды</h1>
+                    <div class="row">
+                        <p>Самара,</p>
+                        <p>2 июня,</p>
+                        <p>среда</p>
+                    </div>
+                </section>
+            </header>
+
+            <main class="container">
+                <section class="slider center">
+
+                    <button class="slider__btn slider__btn-prev">Prev</button>
+
+                    <div class="slider__content">
+                        <ul class="slider__container row">
+                            <li class="slider__item item" style="display: block;">
+
+                                <section class="item__head">
+                                    <h5 class="item__day"></h5>
+                                    <h4 class="item__date"></h4>
+                                </section>
+
+                                <section class="item__weather">
+                                    <i class="fas fa-sun"></i>
+                                    <div class="item__temp">
+                                        <h3 class="item__temp">днем: </h3>
+                                        <h3 class="item__temp">ночью: </h3>
+                                    </div>
+                                </section>
+
+                                <section class="item__footer">
+                                    <p>ясно</p>
+                                    <p>без осадков</p>
+                                </section>
+
+                            </li>
+
+                            <li class="slider__item item">
+
+                                <section class="item__head">
+                                    <h5 class="item__day"></h5>
+                                    <h4 class="item__date"></h4>
+                                </section>
+        
+                                <section class="item__weather">
+                                    <i class="fas fa-sun"></i>
+                                    <div class="item__temp">
+                                        <h3 class="item__temp">днем: </h3>
+                                        <h3 class="item__temp">ночью: </h3>
+                                    </div>
+                                </section>
+        
+                                <section class="item__footer">
+                                    <p>ясно</p>
+                                    <p>без осадков</p>
+                                </section>
+
+                            </li>
+
+                            <li class="slider__item item">
+
+                                <section class="item__head">
+                                    <h5 class="item__day"></h5>
+                                    <h4 class="item__date"></h4>
+                                </section>
+                
+                                <section class="item__weather">
+                                    <i class="fas fa-sun"></i>
+                                    <div class="item__temp">
+                                        <h3 class="item__temp">днем: </h3>
+                                        <h3 class="item__temp">ночью: </h3>
+                                    </div>
+                                </section>
+                
+                                <section class="item__footer">
+                                    <p>ясно</p>
+                                    <p>без осадков</p>
+                                </section>
+
+                            </li>
+                            
+                            <li class="slider__item item">
+
+                                <section class="item__head">
+                                    <h5 class="item__day"></h5>
+                                    <h4 class="item__date"></h4>
+                                </section>
+                    
+                                <section class="item__weather">
+                                    <i class="fas fa-sun"></i>
+                                    <div class="item__temp">
+                                        <h3 class="item__temp">днем: </h3>
+                                        <h3 class="item__temp">ночью: </h3>
+                                    </div>
+                                </section>
+                    
+                                <section class="item__footer">
+                                    <p>ясно</p>
+                                    <p>без осадков</p>
+                                </section>
+        
+                            </li>
+                        </ul>    
+                    </div>
+
+                    <button class="slider__btn slider__btn-next">Next</button>
+
+                </section>
+            </main>
         </div>
 
-        <main class="container">
-            <section class="slider">
+        <footer class="footer">
 
-                <button class="slider__btn slider__btn-prev">Prev</button>
-
-                <div class="slider__content">
-                    <ul>
-                        <li class="slider__item"></li>
-                        <li class="slider__item"></li>
-                        <li class="slider__item"></li>
-                        <li class="slider__item"></li>
-                    </ul>    
-                </div>
-
-                <button class="slider__btn slider__btn-next">Next</button>
-
-            </section>
-        </main>
-    </div>
-
-    <footer class="footer">
-
-        <div class="footer__top row">
-            <address>
-                <a href="tel:+7991725234">8(999)172-5234</a>
-                <a href="mailto:killer_code@bk.ru">killer_code@bk.ru</a>
-            </address>
-            <section>
-                <a href="https://vk.com">VK.RU</a>
-            </section>
-        </div>
-
-        <div class="footer__bottom row">
-            <div class="author">
-                <span>Relise by</span>
-                <a href="https://github.com/killer-code" 
-                    target="__blank">killer_code</a>
+            <div class="row wrapper footer__top">
+                <address>
+                    <a href="tel:+7991725234">8(999)172-5234</a>
+                    <a href="mailto:killer_code@bk.ru">killer_code@bk.ru</a>
+                </address>
+                <section>
+                    <a href="https://vk.com">VK.RU</a>
+                </section>
             </div>
-            <small>&copy;2019г.</small>
-        </div>
-    </footer>
+
+            <div class="row wrapper footer__bottom">
+                <div class="author">
+                    <span>Relise by</span>
+                    <a href="https://github.com/killer-code" 
+                        target="__blank">killer_code</a>
+                </div>
+                <small>&copy;2019г.</small>
+            </div>
+        </footer>
+    </div>
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/7bcf1f04ae.js"></script>
+    <!-- My scripts -->
     <script src="./src/scripts/main.js" type="module"></script>
 </body>
 </html>

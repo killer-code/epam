@@ -4,3 +4,11 @@ body{
     font-size: 15px;
     color: #231f20;
 }
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}

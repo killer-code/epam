@@ -1,7 +1,13 @@
 /* Roboto */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic');
-
+/* Базовые стили */
 @import "./base/normalize.css";
 @import "./base/base.css";
-
+/* Сетка */
 @import "./layout/layout.css";
+/* Модули */
+@import "./modules/modules.css";
+/* Состояния */
+@import "./state/state.css";
+/* Темы */
+@import "./themes/light.css";

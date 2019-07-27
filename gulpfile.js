@@ -43,4 +43,9 @@ gulp.task('minJs', function() {
         .pipe(reload({stream: true}))
 });
 
-gulp.task('default', gulp.parallel('minCss', 'minJs', 'autoReload'));
+gulp.task('watch', function() {
+    gulp.watch(paths.css, gulp.series('minCss'));
+    gulp.watch(paths.js, gulp.series('minJs'));
+});
+
+gulp.task('default', gulp.parallel('watch', 'autoReload'));
