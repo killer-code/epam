@@ -1,3 +1,3 @@
-import { test } from './modules/test.js';
+import { test } from '../dist/scripts/test.min.js';
 
 test();
