@@ -16,9 +16,9 @@
                 autoplay="autoplay" 
                 loop="loop" 
                 preload="auto">
-                    <!-- <source src="assets/video/clear.mp4" style="display: none;"></source> -->
+                    <source src="assets/video/clear.mp4"></source>
                     <!-- <source src="assets/video/clouds.mp4"></source> -->
-                    <source src="assets/video/rain.mp4" style="display: none;"></source>
+                    <!-- <source src="assets/video/rain.mp4"></source> -->
                     <!-- <source src="assets/video/snow.mp4"></source> -->
             </video>
 
@@ -26,40 +26,50 @@
 
             <header>
                 <section class="container center title">
-                    <h1>Прогноз погоды</h1>
-                    <div class="row">
-                        <p>Самара,</p>
-                        <p>2 июня,</p>
-                        <p>среда</p>
+                    <h1 class="title__text">Прогноз погоды</h1>
+                    <div class="row title__text-small">
+                        <p>Самара,&nbsp;</p>
+                        <p>2 июня,&nbsp;</p>
+                        <p>среда&nbsp;</p>
                     </div>
                 </section>
             </header>
 
-            <main class="container">
+            <main class="wrapper">
                 <section class="slider center">
 
-                    <button class="slider__btn slider__btn-prev">Prev</button>
+                    <button class="slider__btn slider__btn-prev">
+                            <i class="fas fa-arrow-circle-left"></i>
+                    </button>
 
                     <div class="slider__content">
                         <ul class="slider__container row">
-                            <li class="slider__item item" style="display: block;">
+                            <li class="slider__item item js-item-active">
 
                                 <section class="item__head">
-                                    <h5 class="item__day"></h5>
-                                    <h4 class="item__date"></h4>
+                                    <h5 class="item__day">Сегодня</h5>
+                                    <h4 class="item__date">2 июня</h4>
                                 </section>
 
                                 <section class="item__weather">
-                                    <i class="fas fa-sun"></i>
+                                    <i class="fas fa-sun item__icon"></i>
                                     <div class="item__temp">
-                                        <h3 class="item__temp">днем: </h3>
-                                        <h3 class="item__temp">ночью: </h3>
+                                        <div class="row temp__count">
+                                            <h3 class="item__temp">днем</h3>
+                                            <div class="dashed"></div>
+                                            <h3 class="item__temp">+20</h3>
+                                        </div>
+                                        <div class="row temp__count">
+                                            <h3 class="item__temp">ночью</h3>
+                                            <div class="dashed"></div>
+                                            <h3 class="item__temp">+10</h3>
+                                        </div>
                                     </div>
                                 </section>
 
                                 <section class="item__footer">
                                     <p>ясно</p>
-                                    <p>без осадков</p>
+                                    <p class="js-fallout">без осадков</p>
                                 </section>
 
                             </li>
@@ -67,21 +77,29 @@
                             <li class="slider__item item">
 
                                 <section class="item__head">
-                                    <h5 class="item__day"></h5>
-                                    <h4 class="item__date"></h4>
+                                    <h5 class="item__day">Сегодня</h5>
+                                    <h4 class="item__date">2 июня</h4>
                                 </section>
         
                                 <section class="item__weather">
-                                    <i class="fas fa-sun"></i>
+                                    <i class="far fa-snowflake item__icon"></i>
                                     <div class="item__temp">
-                                        <h3 class="item__temp">днем: </h3>
-                                        <h3 class="item__temp">ночью: </h3>
+                                        <div class="row temp__count">
+                                            <h3 class="item__temp">днем</h3>
+                                            <div class="dashed"></div>
+                                            <h3 class="item__temp">+20</h3>
+                                        </div>
+                                        <div class="row temp__count">
+                                            <h3 class="item__temp">ночью</h3>
+                                            <div class="dashed"></div>
+                                            <h3 class="item__temp">+10</h3>
+                                        </div>
                                     </div>
                                 </section>
         
                                 <section class="item__footer">
                                     <p>ясно</p>
-                                    <p>без осадков</p>
+                                    <p class="js-fallout">без осадков</p>
                                 </section>
 
                             </li>
@@ -89,21 +107,29 @@
                             <li class="slider__item item">
 
                                 <section class="item__head">
-                                    <h5 class="item__day"></h5>
-                                    <h4 class="item__date"></h4>
+                                    <h5 class="item__day">Сегодня</h5>
+                                    <h4 class="item__date">2 июня</h4>
                                 </section>
                 
                                 <section class="item__weather">
-                                    <i class="fas fa-sun"></i>
+                                    <i class="fas fa-cloud item__icon"></i>
                                     <div class="item__temp">
-                                        <h3 class="item__temp">днем: </h3>
-                                        <h3 class="item__temp">ночью: </h3>
+                                        <div class="row temp__count">
+                                            <h3 class="item__temp">днем</h3>
+                                            <div class="dashed"></div>
+                                            <h3 class="item__temp">+20</h3>
+                                        </div>
+                                        <div class="row temp__count">
+                                            <h3 class="item__temp">ночью</h3>
+                                            <div class="dashed"></div>
+                                            <h3 class="item__temp">+10</h3>
+                                        </div>
                                     </div>
                                 </section>
                 
                                 <section class="item__footer">
                                     <p>ясно</p>
-                                    <p>без осадков</p>
+                                    <p class="js-fallout">без осадков</p>
                                 </section>
 
                             </li>
@@ -111,54 +137,42 @@
                             <li class="slider__item item">
 
                                 <section class="item__head">
-                                    <h5 class="item__day"></h5>
-                                    <h4 class="item__date"></h4>
+                                    <h5 class="item__day">Сегодня</h5>
+                                    <h4 class="item__date">2 июня</h4>
                                 </section>
                     
                                 <section class="item__weather">
-                                    <i class="fas fa-sun"></i>
+                                    <i class="fas fa-cloud-showers-heavy  item__icon"></i>
                                     <div class="item__temp">
-                                        <h3 class="item__temp">днем: </h3>
-                                        <h3 class="item__temp">ночью: </h3>
+                                        <div class="row temp__count">
+                                            <h3 class="item__temp">днем</h3>
+                                            <div class="dashed"></div>
+                                            <h3 class="item__temp">+20</h3>
+                                        </div>
+                                        <div class="row temp__count">
+                                            <h3 class="item__temp">ночью</h3>
+                                            <div class="dashed"></div>
+                                            <h3 class="item__temp">+10</h3>
+                                        </div>
                                     </div>
                                 </section>
                     
                                 <section class="item__footer">
                                     <p>ясно</p>
-                                    <p>без осадков</p>
+                                    <p class="js-fallout">без осадков</p>
                                 </section>
         
                             </li>
                         </ul>    
                     </div>
 
-                    <button class="slider__btn slider__btn-next">Next</button>
+                    <button class="slider__btn slider__btn-next">
+                            <i class="fas fa-arrow-circle-right"></i>
+                    </button>
 
                 </section>
             </main>
         </div>
-
-        <footer class="footer">
-
-            <div class="row wrapper footer__top">
-                <address>
-                    <a href="tel:+7991725234">8(999)172-5234</a>
-                    <a href="mailto:killer_code@bk.ru">killer_code@bk.ru</a>
-                </address>
-                <section>
-                    <a href="https://vk.com">VK.RU</a>
-                </section>
-            </div>
-
-            <div class="row wrapper footer__bottom">
-                <div class="author">
-                    <span>Relise by</span>
-                    <a href="https://github.com/killer-code" 
-                        target="__blank">killer_code</a>
-                </div>
-                <small>&copy;2019г.</small>
-            </div>
-        </footer>
     </div>
     <!-- Font-awesome -->
     <script src="https://kit.fontawesome.com/7bcf1f04ae.js"></script>
