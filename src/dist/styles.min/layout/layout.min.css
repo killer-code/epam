@@ -1,1 +1,1 @@
-.col,.row{display:flex}.container{max-width:1000px;margin:0 auto}.row{flex-direction:row}.col{flex-direction:column}
+.center,.col,.row{display:flex}.container{max-width:1000px;margin:0 auto}.row{flex-direction:row}.col{flex-direction:column}.center{flex-direction:row;justify-content:center;align-items:center}.wrapper{margin:20px}
