@@ -8,6 +8,8 @@ function changeTheme() {
 
     if(falloutTxt !== 'без осадков') {
         page.classList.add('light');
+    } else {
+        page.classList.remove('light');
     }
 };
 

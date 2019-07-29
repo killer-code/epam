@@ -8,6 +8,8 @@
 
 .light .slider__btn { color: #ededed; }
 
+.light .slider__btn-disabled { color: #ededed; }
+
 .light .dashed { border-color: #dfdfbf; }
 
 .light .js-item-active, 
