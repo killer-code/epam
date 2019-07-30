@@ -1,3 +1,4 @@
+// менят тему в зависимости от цвета фона(косвенно т.к. цвет фона зависит от осадков)
 function changeTheme() {
     const page       = document.querySelector('.full-page'),
           activeItem = document.querySelector('.js-item-active'),

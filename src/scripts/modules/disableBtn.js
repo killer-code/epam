@@ -1,3 +1,4 @@
+// отключает кнопки слайдера в пограничных состаяниях
 function disableBtn() {
     const slides    = document.querySelectorAll('.js-slide'),
           btnPrev   = document.querySelector('.js-btn__prev'),
