@@ -1,4 +1,6 @@
-import { changeTheme } from '../../dist/scripts/changeTheme.min.js';
+// Модуль отвечает за переключение элементов в слайдере 
+
+import { changeBackground } from '../../dist/scripts/changeBackground.min.js';
 import { disableBtn }  from '../../dist/scripts/disableBtn.min.js';
 
 function changeDay() {
@@ -9,19 +11,21 @@ function changeDay() {
     if(!slides) { return };
 
     (function changeDayClickSlide() {
+        // смена слайдов по клику на элемент
         slides.forEach(function(slide) {
             slide.addEventListener('click', function() {
                 let activeSlide = document.querySelector('.js-item-active');
                 
                 activeSlide.classList.remove('js-item-active');
                 slide.classList.add('js-item-active');
-                changeTheme();
+                changeBackground();
                 disableBtn();
             })
         })
     })();
 
     (function changeNextDay() {
+        // выбор следующего слайда при клике на соответствующую кнопку
         btnNext.addEventListener('click', function() {
             let activeSlide = document.querySelector('.js-item-active');
 
@@ -34,12 +38,13 @@ function changeDay() {
                     }
                 }
             });
-            changeTheme();
+            changeBackground();
             disableBtn();
         })
     })();
 
     (function changePrevDay() {
+        // выбор предыдущего слайда при клике на соответствующую кнопку
         btnPrev.addEventListener('click', function() {
             let activeSlide = document.querySelector('.js-item-active');
 
@@ -52,7 +57,7 @@ function changeDay() {
                     }
                 }
             });
-            changeTheme();
+            changeBackground();
             disableBtn();
         })
     })();

@@ -1,3 +1,4 @@
+// получает, обрабатывает и записывает дату в шапке
 function writeHeaderDate() {
     const tagDate = document.querySelector('.js-date'),
           tagDay  = document.querySelector('.js-day');
