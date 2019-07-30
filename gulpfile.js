@@ -8,6 +8,9 @@ const rename       = require('gulp-rename');
 const browserSync  = require('browser-sync');
 const reload       = browserSync.reload;
 
+const jsonServer   = require('gulp-json-srv');
+const server       = jsonServer.create();
+
 const paths = {
     css : ['src/styles/**/*.css'],
     js  : ['src/scripts/modules/*.js'],
@@ -24,6 +27,11 @@ gulp.task('autoReload', function() {
     });
 
     gulp.watch("index.html").on('change', browserSync.reload);
+});
+
+gulp.task("json", function(){
+    return gulp.src("db/data.json")
+        .pipe(server.pipe());
 });
 
 gulp.task('minCss', function() {
@@ -48,4 +56,4 @@ gulp.task('watch', function() {
     gulp.watch(paths.js, gulp.series('minJs'));
 });
 
-gulp.task('default', gulp.parallel('watch', 'autoReload'));
+gulp.task('default', gulp.parallel('watch', 'autoReload', 'json'));

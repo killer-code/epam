@@ -1,0 +1,202 @@
+{"db":
+  [
+    {
+      "date": 1564437600000,
+      "temperature": {
+        "day": "+26",
+        "night": "+20"
+      },
+      "cloudiness": "ясно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1564524000000,
+      "temperature": {
+        "day": "+16",
+        "night": "+10"
+      },
+      "cloudiness": "облачно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1564610400000,
+      "temperature": {
+        "day": "-60",
+        "night": "-150"
+      },
+      "cloudiness": "облачно",
+      "fallout": "снег"
+    },
+    {
+      "date": 1564696800000,
+      "temperature": {
+        "day": "+20",
+        "night": "+16"
+      },
+      "cloudiness": "облачно",
+      "fallout": "дождь"
+    },
+    {
+      "date": 1564783200000,
+      "temperature": {
+        "day": "+26",
+        "night": "+20"
+      },
+      "cloudiness": "ясно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1564869600000,
+      "temperature": {
+        "day": "+16",
+        "night": "+10"
+      },
+      "cloudiness": "облачно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1564956000000,
+      "temperature": {
+        "day": "-60",
+        "night": "-150"
+      },
+      "cloudiness": "облачно",
+      "fallout": "снег"
+    },
+    {
+      "date": 1565042400000,
+      "temperature": {
+        "day": "+20",
+        "night": "+16"
+      },
+      "cloudiness": "облачно",
+      "fallout": "дождь"
+    },
+    {
+      "date": 1565128800000,
+      "temperature": {
+        "day": "+26",
+        "night": "+20"
+      },
+      "cloudiness": "ясно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1565215200000,
+      "temperature": {
+        "day": "+16",
+        "night": "+10"
+      },
+      "cloudiness": "облачно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1565301600000,
+      "temperature": {
+        "day": "-60",
+        "night": "-150"
+      },
+      "cloudiness": "облачно",
+      "fallout": "снег"
+    },
+    {
+      "date": 1565388000000,
+      "temperature": {
+        "day": "+20",
+        "night": "+16"
+      },
+      "cloudiness": "облачно",
+      "fallout": "дождь"
+    },
+    {
+      "date": 1565474400000,
+      "temperature": {
+        "day": "+26",
+        "night": "+20"
+      },
+      "cloudiness": "ясно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1565560800000,
+      "temperature": {
+        "day": "+16",
+        "night": "+10"
+      },
+      "cloudiness": "облачно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1565647200000,
+      "temperature": {
+        "day": "-60",
+        "night": "-150"
+      },
+      "cloudiness": "облачно",
+      "fallout": "снег"
+    },
+    {
+      "date": 1565733600000,
+      "temperature": {
+        "day": "+20",
+        "night": "+16"
+      },
+      "cloudiness": "облачно",
+      "fallout": "дождь"
+    },
+    {
+      "date": 1565820000000,
+      "temperature": {
+        "day": "+26",
+        "night": "+20"
+      },
+      "cloudiness": "ясно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1565906400000,
+      "temperature": {
+        "day": "+16",
+        "night": "+10"
+      },
+      "cloudiness": "облачно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1565992800000,
+      "temperature": {
+        "day": "-60",
+        "night": "-150"
+      },
+      "cloudiness": "облачно",
+      "fallout": "снег"
+    },
+    {
+      "date": 1566079200000,
+      "temperature": {
+        "day": "+20",
+        "night": "+16"
+      },
+      "cloudiness": "облачно",
+      "fallout": "дождь"
+    },
+    {
+      "date": 1566165600000,
+      "temperature": {
+        "day": "+26",
+        "night": "+20"
+      },
+      "cloudiness": "ясно",
+      "fallout": "без осадков"
+    },
+    {
+      "date": 1566252000000,
+      "temperature": {
+        "day": "-60",
+        "night": "-150"
+      },
+      "cloudiness": "облачно",
+      "fallout": "снег"
+    }
+  ]
+}
