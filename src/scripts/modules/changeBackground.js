@@ -9,9 +9,9 @@ function changeBackground() {
 
     const backgrounds = {
         cliar: 'assets/video/clear.mp4',
-        clouds: 'src="assets/video/clouds.mp4',
-        rain: '<source class="js-source" src="assets/video/rain.mp4"</source>',
-        snow: '<source class="js-source" src="assets/video/snow.mp4"</source>'
+        clouds: 'assets/video/clouds.mp4',
+        rain: 'assets/video/rain.mp4',
+        snow: 'assets/video/snow.mp4'
     };
 
     let source = document.createElement('source'),
