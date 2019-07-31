@@ -22,16 +22,17 @@ function changeData() {
                         'Четверг', 'Пятница', 'Суббота'];
 
     let arrData = [],
-        item    = 0,
-        count   = 4;
+        item    = 0;
 
     for(item; item < data.length; item++) {
-
-        if(data[item].date === today) {
+ 
+        if(data[item].date == today) {
             item = item;
+            break;
         }
-        break;
     }
+
+    let count = item + 4;
 
     for(item; item < count; item++) {
         arrData.push(data[item]);
