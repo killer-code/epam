@@ -8,10 +8,10 @@ function changeBackground() {
           fallout = slide.querySelector('.js-fallout');
 
     const backgrounds = {
-        cliar: 'assets/video/clear.mp4',
-        clouds: 'assets/video/clouds.mp4',
-        rain: 'assets/video/rain.mp4',
-        snow: 'assets/video/snow.mp4'
+          cliar: 'assets/video/clear.mp4',
+          clouds: 'assets/video/clouds.mp4',
+          rain: 'assets/video/rain.mp4',
+          snow: 'assets/video/snow.mp4'
     };
 
     let source = document.createElement('source'),
